@@ -1,0 +1,12 @@
+[
+    {
+      "icon": "business",
+      "name": "ISO-19152 LADM",
+      "redirectTo": "/iso-ladm"
+    },
+    {
+      "icon": "code-working",
+      "name": "Interlis",
+      "redirectTo": "/interlis"
+    }
+  ]

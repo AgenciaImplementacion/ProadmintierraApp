@@ -1,5 +1,7 @@
 {
   "name": "proadmintierraApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

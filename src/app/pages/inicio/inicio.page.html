@@ -1,0 +1,28 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-menu-button slot="start" color="primary" menu="primerMenu"></ion-menu-button>
+
+    <ion-title color="primary">Proadmintierra</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-text>
+    <h4 padding>Bienvenido a la app del proyecto "Modernización de la Administración de tierras en Colombia"</h4>
+    <p padding>En la siguiente lista encontrarás información relacionada con la ISO 19152, implementación de la norma a
+      través de Interlis, uso de las herramientas Ilisuite y el
+      Asistente LADM-COL, cómo opera el Sistema de Administración de Tierras S.A.T., y cómo se dispone la información a
+      través de la IDE-AT
+      (Infraestructura de Datos Espaciales para la Administración de Tierras):
+    </p>
+  </ion-text>
+  <ion-list>
+    <ion-item *ngFor="let c of componentes | async" [routerLink]="c.redirectTo" detail>
+      <ion-icon color="primary" slot="start" [name]="c.icon"></ion-icon>
+      <ion-label>{{ c.name }}</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
